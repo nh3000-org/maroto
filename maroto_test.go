@@ -28,7 +28,7 @@ func TestNew(t *testing.T) {
 		assert.NotNil(t, sut)
 		assert.Equal(t, "*maroto.Maroto", fmt.Sprintf("%T", sut))
 	})
-	t.Run("new with config", func(t *testing.T) {
+	t.Run("when config is sent, it should create Maroto object", func(t *testing.T) {
 		// Arrange
 		cfg := config.NewBuilder().
 			Build()
@@ -40,7 +40,7 @@ func TestNew(t *testing.T) {
 		assert.NotNil(t, sut)
 		assert.Equal(t, "*maroto.Maroto", fmt.Sprintf("%T", sut))
 	})
-	t.Run("new with config an concurrent mode on", func(t *testing.T) {
+	t.Run("when config with an concurrent mode is sent, should create Maroto object", func(t *testing.T) {
 		// Arrange
 		cfg := config.NewBuilder().
 			WithConcurrentMode(7).
@@ -53,7 +53,7 @@ func TestNew(t *testing.T) {
 		assert.NotNil(t, sut)
 		assert.Equal(t, "*maroto.Maroto", fmt.Sprintf("%T", sut))
 	})
-	t.Run("new with config an low memory mode on", func(t *testing.T) {
+	t.Run("when config with an low memory mode is sent, should create Maroto object", func(t *testing.T) {
 		// Arrange
 		cfg := config.NewBuilder().
 			WithSequentialLowMemoryMode(10).
@@ -94,7 +94,7 @@ func TestMaroto_AddRow(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_add_row_4.json")
 	})
-	t.Run("add one row", func(t *testing.T) {
+	t.Run("when one row is sent, should create one row", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -104,17 +104,7 @@ func TestMaroto_AddRow(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_add_row_1.json")
 	})
-	t.Run("add one row", func(t *testing.T) {
-		// Arrange
-		sut := maroto.New()
-
-		// Act
-		sut.AddRow(10, col.New(12))
-
-		// Assert
-		test.New(t).Assert(sut.GetStructure()).Equals("maroto_add_row_1.json")
-	})
-	t.Run("add two rows", func(t *testing.T) {
+	t.Run("when two rows are sent, should create two rows", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -125,7 +115,7 @@ func TestMaroto_AddRow(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_add_row_2.json")
 	})
-	t.Run("add rows until add new page", func(t *testing.T) {
+	t.Run("when rows do not fit on the current page, should create a new page", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -150,7 +140,7 @@ func TestMaroto_AddRows(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_add_rows_4.json")
 	})
-	t.Run("add one row", func(t *testing.T) {
+	t.Run("when one row is sent, should create one row", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -160,7 +150,7 @@ func TestMaroto_AddRows(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_add_rows_1.json")
 	})
-	t.Run("add two rows", func(t *testing.T) {
+	t.Run("when two rows are sent, should create two rows", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -171,7 +161,7 @@ func TestMaroto_AddRows(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_add_rows_2.json")
 	})
-	t.Run("add rows until add new page", func(t *testing.T) {
+	t.Run("when rows do not fit on the current page, should create a new page", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -214,7 +204,7 @@ func TestMaroto_AddAutoRow(t *testing.T) {
 }
 
 func TestMaroto_AddPages(t *testing.T) {
-	t.Run("add one page", func(t *testing.T) {
+	t.Run("when a new page is created, should add a page", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -228,7 +218,7 @@ func TestMaroto_AddPages(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_add_pages_1.json")
 	})
-	t.Run("add two pages", func(t *testing.T) {
+	t.Run("when two pages are created, should add two pages", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -245,7 +235,7 @@ func TestMaroto_AddPages(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_add_pages_2.json")
 	})
-	t.Run("add page greater than one page", func(t *testing.T) {
+	t.Run("when the sent page uses two pages, two pages are created", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 		var rows []core.Row
@@ -262,7 +252,7 @@ func TestMaroto_AddPages(t *testing.T) {
 }
 
 func TestMaroto_Generate(t *testing.T) {
-	t.Run("add one row", func(t *testing.T) {
+	t.Run("when one row is sent, should generate one row", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -274,7 +264,7 @@ func TestMaroto_Generate(t *testing.T) {
 		assert.Nil(t, err)
 		assert.NotNil(t, doc)
 	})
-	t.Run("add two rows", func(t *testing.T) {
+	t.Run("when two row are sent, should generate two row", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -287,7 +277,7 @@ func TestMaroto_Generate(t *testing.T) {
 		assert.Nil(t, err)
 		assert.NotNil(t, doc)
 	})
-	t.Run("add rows until add new page", func(t *testing.T) {
+	t.Run("when rows do not fit on the current page, should generate two pages", func(t *testing.T) {
 		// Arrange
 		sut := maroto.New()
 
@@ -301,7 +291,7 @@ func TestMaroto_Generate(t *testing.T) {
 		assert.Nil(t, err)
 		assert.NotNil(t, doc)
 	})
-	t.Run("add rows until add new page, execute in parallel", func(t *testing.T) {
+	t.Run("when rows do not fit on the current page and concurrent mode is active, should executed in parallel", func(t *testing.T) {
 		// Arrange
 		cfg := config.NewBuilder().
 			WithConcurrentMode(7).
@@ -319,7 +309,7 @@ func TestMaroto_Generate(t *testing.T) {
 		assert.Nil(t, err)
 		assert.NotNil(t, doc)
 	})
-	t.Run("add rows until add new page, execute in low memory mode", func(t *testing.T) {
+	t.Run("when two pages are sent and low memory mode is active, should executed in low memory mode", func(t *testing.T) {
 		// Arrange
 		cfg := config.NewBuilder().
 			WithSequentialLowMemoryMode(10).
@@ -337,7 +327,7 @@ func TestMaroto_Generate(t *testing.T) {
 		assert.Nil(t, err)
 		assert.NotNil(t, doc)
 	})
-	t.Run("sequential generation", func(t *testing.T) {
+	t.Run("when two pages are sent and sequential generation is active, should executed in sequential generation mode", func(t *testing.T) {
 		// Arrange
 		cfg := config.NewBuilder().
 			WithSequentialMode().
@@ -353,7 +343,7 @@ func TestMaroto_Generate(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_sequential.json")
 	})
-	t.Run("sequential low memory generation", func(t *testing.T) {
+	t.Run("when two pages are sent and sequential low memory is active, should executed in sequential low memory mode", func(t *testing.T) {
 		// Arrange
 		cfg := config.NewBuilder().
 			WithSequentialLowMemoryMode(10).
@@ -369,7 +359,7 @@ func TestMaroto_Generate(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_sequential_low_memory.json")
 	})
-	t.Run("sequential low memory generation", func(t *testing.T) {
+	t.Run("when two pages are sent and concurrent mode is active, should executed in parallel", func(t *testing.T) {
 		// Arrange
 		cfg := config.NewBuilder().
 			WithConcurrentMode(10).
@@ -385,7 +375,7 @@ func TestMaroto_Generate(t *testing.T) {
 		// Assert
 		test.New(t).Assert(sut.GetStructure()).Equals("maroto_concurrent.json")
 	})
-	t.Run("page number", func(t *testing.T) {
+	t.Run("when two pages are sent and page number is active, should add page number", func(t *testing.T) {
 		// Arrange
 		cfg := config.NewBuilder().
 			WithPageNumber().
@@ -404,7 +394,7 @@ func TestMaroto_Generate(t *testing.T) {
 }
 
 func TestMaroto_FitlnCurrentPage(t *testing.T) {
-	t.Run("when component is smaller should available size, then false", func(t *testing.T) {
+	t.Run("when component is smaller should available size, should return false", func(t *testing.T) {
 		sut := maroto.New(config.NewBuilder().
 			WithDimensions(210.0, 297.0).
 			Build())
@@ -417,7 +407,7 @@ func TestMaroto_FitlnCurrentPage(t *testing.T) {
 		sut.AddPages(page.New().Add(rows...))
 		assert.False(t, sut.FitlnCurrentPage(40))
 	})
-	t.Run("when component is larger should the available size, then true", func(t *testing.T) {
+	t.Run("when component is larger should the available size, should return true", func(t *testing.T) {
 		sut := maroto.New(config.NewBuilder().
 			WithDimensions(210.0, 297.0).
 			Build())
@@ -447,7 +437,7 @@ func TestMaroto_FitlnCurrentPage(t *testing.T) {
 }
 
 func TestMaroto_GetCurrentConfig(t *testing.T) {
-	t.Run("When GetCurrentConfig is called then current settings are returned", func(t *testing.T) {
+	t.Run("When GetCurrentConfig is called, should return the current settings", func(t *testing.T) {
 		sut := maroto.New(config.NewBuilder().
 			WithMaxGridSize(20).
 			Build())
