@@ -1,4 +1,4 @@
-module github.com/johnfercher/maroto/v2
+module github.com/nh3000-org/maroto/v2
 
 go 1.24
 
