@@ -3,11 +3,11 @@ package main
 import (
 	"log"
 
-	"github.com/johnfercher/maroto/v2"
-	"github.com/johnfercher/maroto/v2/pkg/components/page"
-	"github.com/johnfercher/maroto/v2/pkg/components/text"
-	"github.com/johnfercher/maroto/v2/pkg/config"
-	"github.com/johnfercher/maroto/v2/pkg/core"
+	"github.com/nh3000-org/maroto/v2"
+	"github.com/nh3000-org/maroto/v2/pkg/components/page"
+	"github.com/nh3000-org/maroto/v2/pkg/components/text"
+	"github.com/nh3000-org/maroto/v2/pkg/config"
+	"github.com/nh3000-org/maroto/v2/pkg/core"
 )
 
 func main() {

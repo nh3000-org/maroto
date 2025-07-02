@@ -1,8 +1,8 @@
 package props
 
 import (
-	"github.com/johnfercher/maroto/v2/pkg/consts/linestyle"
-	"github.com/johnfercher/maroto/v2/pkg/consts/orientation"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/linestyle"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/orientation"
 )
 
 // Line represents properties from a Line inside a cell.

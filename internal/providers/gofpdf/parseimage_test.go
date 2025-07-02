@@ -3,9 +3,9 @@ package gofpdf_test
 import (
 	"testing"
 
-	"github.com/johnfercher/maroto/v2/internal/providers/gofpdf"
+	"github.com/nh3000-org/maroto/v2/internal/providers/gofpdf"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/extension"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/extension"
 	"github.com/stretchr/testify/assert"
 )
 

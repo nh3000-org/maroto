@@ -4,12 +4,12 @@ import (
 	"log"
 	"os"
 
-	"github.com/johnfercher/maroto/v2/pkg/core"
+	"github.com/nh3000-org/maroto/v2/pkg/core"
 
-	"github.com/johnfercher/maroto/v2"
+	"github.com/nh3000-org/maroto/v2"
 
-	"github.com/johnfercher/maroto/v2/pkg/components/text"
-	"github.com/johnfercher/maroto/v2/pkg/config"
+	"github.com/nh3000-org/maroto/v2/pkg/components/text"
+	"github.com/nh3000-org/maroto/v2/pkg/config"
 )
 
 var dummyText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac condimentum sem."

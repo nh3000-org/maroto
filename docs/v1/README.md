@@ -2,12 +2,12 @@
 
 # Maroto
 
-[![GoDoc](https://godoc.org/github.com/johnfercher/maroto?status.svg)](https://godoc.org/github.com/johnfercher/maroto)
-[![Go Report Card](https://goreportcard.com/badge/github.com/johnfercher/maroto)](https://goreportcard.com/report/github.com/johnfercher/maroto)
+[![GoDoc](https://godoc.org/github.com/nh3000-org/maroto?status.svg)](https://godoc.org/github.com/nh3000-org/maroto)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nh3000-org/maroto)](https://goreportcard.com/report/github.com/nh3000-org/maroto)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go#template-engines)  
-[![CI](https://github.com/johnfercher/maroto/actions/workflows/goci.yml/badge.svg)](https://github.com/johnfercher/maroto/actions/workflows/goci.yml)
-[![Lint](https://github.com/johnfercher/maroto/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/johnfercher/maroto/actions/workflows/golangci-lint.yml)
-[![Codecov](https://img.shields.io/codecov/c/github/johnfercher/maroto)](https://codecov.io/gh/johnfercher/maroto)
+[![CI](https://github.com/nh3000-org/maroto/actions/workflows/goci.yml/badge.svg)](https://github.com/nh3000-org/maroto/actions/workflows/goci.yml)
+[![Lint](https://github.com/nh3000-org/maroto/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/nh3000-org/maroto/actions/workflows/golangci-lint.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/nh3000-org/maroto)](https://codecov.io/gh/nh3000-org/maroto)
 
 A Maroto way to create PDFs. Maroto is inspired in Bootstrap and uses [Gofpdf](https://github.com/jung-kurt/gofpdf). Fast and simple.
 
@@ -22,7 +22,7 @@ always when a new page appear, in this case, a header may have many rows, lines 
 * With `go get`:
 
 ```bash
-go get -u github.com/johnfercher/pkg/internal
+go get -u github.com/nh3000-org/pkg/internal
 ```
 
 ## Contributing
@@ -48,10 +48,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/johnfercher/maroto/pkg/color"
-	"github.com/johnfercher/maroto/pkg/consts"
-	"github.com/johnfercher/maroto/pkg/pdf"
-	"github.com/johnfercher/maroto/pkg/props"
+	"github.com/nh3000-org/maroto/pkg/color"
+	"github.com/nh3000-org/maroto/pkg/consts"
+	"github.com/nh3000-org/maroto/pkg/pdf"
+	"github.com/nh3000-org/maroto/pkg/props"
 	"os"
 	"time"
 )
@@ -215,4 +215,4 @@ func main() {
 
 ## Stargazers over time
 
-[![Stargazers over time](https://starchart.cc/johnfercher/maroto.svg)](https://starchart.cc/johnfercher/maroto)
+[![Stargazers over time](https://starchart.cc/nh3000-org/maroto.svg)](https://starchart.cc/nh3000-org/maroto)

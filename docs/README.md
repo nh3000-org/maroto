@@ -1,30 +1,30 @@
 # Maroto V2
 
-[![GoDoc](https://godoc.org/github.com/johnfercher/maroto?status.svg)](https://pkg.go.dev/github.com/johnfercher/maroto/v2)
+[![GoDoc](https://godoc.org/github.com/nh3000-org/maroto?status.svg)](https://pkg.go.dev/github.com/nh3000-org/maroto/v2)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go#template-engines) 
-[![Go Report Card](https://goreportcard.com/badge/github.com/johnfercher/maroto)](https://goreportcard.com/report/github.com/johnfercher/maroto)
-[![CI](https://github.com/johnfercher/maroto/actions/workflows/goci.yml/badge.svg)](https://github.com/johnfercher/maroto/actions/workflows/goci.yml)
-[![Lint](https://github.com/johnfercher/maroto/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/johnfercher/maroto/actions/workflows/golangci-lint.yml)
-[![Codecov](https://img.shields.io/codecov/c/github/johnfercher/maroto)](https://codecov.io/gh/johnfercher/maroto)
-[![Visits Badge](https://badges.pufler.dev/visits/johnfercher/maroto)](https://badges.pufler.dev)
-[![Stars Badge](https://img.shields.io/github/stars/johnfercher/maroto.svg?style=social&label=Stars)](https://github.com/johnfercher/maroto/stargazers)
+[![Go Report Card](https://goreportcard.com/badge/github.com/nh3000-org/maroto)](https://goreportcard.com/report/github.com/nh3000-org/maroto)
+[![CI](https://github.com/nh3000-org/maroto/actions/workflows/goci.yml/badge.svg)](https://github.com/nh3000-org/maroto/actions/workflows/goci.yml)
+[![Lint](https://github.com/nh3000-org/maroto/actions/workflows/golangci-lint.yml/badge.svg)](https://github.com/nh3000-org/maroto/actions/workflows/golangci-lint.yml)
+[![Codecov](https://img.shields.io/codecov/c/github/nh3000-org/maroto)](https://codecov.io/gh/nh3000-org/maroto)
+[![Visits Badge](https://badges.pufler.dev/visits/nh3000-org/maroto)](https://badges.pufler.dev)
+[![Stars Badge](https://img.shields.io/github/stars/nh3000-org/maroto.svg?style=social&label=Stars)](https://github.com/nh3000-org/maroto/stargazers)
 
 ### News :new:
 
 #### 1. Github Star
-* Please, if you like maroto consider to nominate`@johnfercher`as a Github star. It's free!
+* Please, if you like maroto consider to nominate`@nh3000-org`as a Github star. It's free!
 * Link: https://stars.github.com/
 
 #### 2. Discussion Opened:`Maroto Document Processor` :fire::fire::fire:: 
 
-* We are about to create a document processor to generate PDFs by interpreting serialized data as: yml, json or html. Please contribute with your ideas in [this discussion](https://github.com/johnfercher/maroto/discussions/390).
+* We are about to create a document processor to generate PDFs by interpreting serialized data as: yml, json or html. Please contribute with your ideas in [this discussion](https://github.com/nh3000-org/maroto/discussions/390).
 
 #### 3. Maroto`v2.3.1`is here! Try out:
 
 * Installation with`go get`:
 
 ```bash
-go get github.com/johnfercher/maroto/v2@v2.3.1
+go get github.com/nh3000-org/maroto/v2@v2.3.1
 ```
 
 The public API was completely redesigned with the aim of enhancing the 
@@ -35,7 +35,7 @@ library in various aspects. The main objectives of`v2.0.0`are:
 3. [Add built-in metrics](README.md?id=built-in-metrics);
 4. [Improve execution time](README.md?id=execution-time-improvement);
 5. Allow recursive Row/Col; **(on roadmap)**
-6. Allow generation based on [serialized data](https://github.com/johnfercher/maroto/discussions/390).
+6. Allow generation based on [serialized data](https://github.com/nh3000-org/maroto/discussions/390).
 
 ## Migration
 
@@ -113,7 +113,7 @@ feature within maroto, such as (Row, Col, Text, QRCode, Image, etc). With the ne
 improved, enabling maroto to reach a whole new level in this fresh new step.
 
 ### New Interfaces
-[filename](https://raw.githubusercontent.com/johnfercher/maroto/master/pkg/core/core.go ':include :type=code')
+[filename](https://raw.githubusercontent.com/nh3000-org/maroto/master/pkg/core/core.go ':include :type=code')
 
 ## Unit Testing
 In maroto`v2`, it is possible to write unit tests by analyzing the **components tree**. To facilitate the 
@@ -146,5 +146,5 @@ The pages are merged using [pdfcpu][pdfcpu]. For a complete example, please refe
 
 [gofpdf]: https://github.com/jung-kurt/gofpdf
 [pdfcpu]: https://github.com/pdfcpu/pdfcpu
-[old_maroto_interface]: https://github.com/johnfercher/maroto/blob/master/pkg/pdf/pdf.go
-[old_row_issue]: https://github.com/johnfercher/maroto/issues/55
+[old_maroto_interface]: https://github.com/nh3000-org/maroto/blob/master/pkg/pdf/pdf.go
+[old_row_issue]: https://github.com/nh3000-org/maroto/issues/55

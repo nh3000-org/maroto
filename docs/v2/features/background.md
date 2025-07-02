@@ -1,8 +1,8 @@
 # Add Background
 
 ## GoDoc
-* [builder : WithBackgroundImage](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/config#CfgBuilder.WithBackgroundImage)
-* [consts : Extension](https://pkg.go.dev/github.com/johnfercher/maroto/v2/pkg/consts/extension#Type)
+* [builder : WithBackgroundImage](https://pkg.go.dev/github.com/nh3000-org/maroto/v2/pkg/config#CfgBuilder.WithBackgroundImage)
+* [consts : Extension](https://pkg.go.dev/github.com/nh3000-org/maroto/v2/pkg/consts/extension#Type)
 
 ## Code Example
 [filename](../../assets/examples/background/v2/main.go  ':include :type=code')
@@ -16,4 +16,4 @@
 [filename](../../assets/text/backgroundv2.txt  ':include :type=code')
 
 ## Test File
-[filename](https://raw.githubusercontent.com/johnfercher/maroto/master/test/maroto/examples/background.json  ':include :type=code')
+[filename](https://raw.githubusercontent.com/nh3000-org/maroto/master/test/maroto/examples/background.json  ':include :type=code')

@@ -1,7 +1,7 @@
 # Footer
 
 ## GoDoc
-* [maroto : RegisterFooter](https://pkg.go.dev/github.com/johnfercher/maroto/v2#Maroto.RegisterFooter)
+* [maroto : RegisterFooter](https://pkg.go.dev/github.com/nh3000-org/maroto/v2#Maroto.RegisterFooter)
 
 ## Code Example
 [filename](../../assets/examples/footer/v2/main.go ':include :type=code')
@@ -15,4 +15,4 @@
 [filename](../../assets/text/footerv2.txt  ':include :type=code')
 
 ## Test File
-[filename](https://raw.githubusercontent.com/johnfercher/maroto/master/test/maroto/examples/footer.json  ':include :type=code')
+[filename](https://raw.githubusercontent.com/nh3000-org/maroto/master/test/maroto/examples/footer.json  ':include :type=code')

@@ -3,10 +3,10 @@ package merror_test
 import (
 	"testing"
 
-	"github.com/johnfercher/maroto/v2/internal/merror"
+	"github.com/nh3000-org/maroto/v2/internal/merror"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/fontfamily"
-	"github.com/johnfercher/maroto/v2/pkg/consts/fontstyle"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/fontfamily"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/fontstyle"
 	"github.com/stretchr/testify/assert"
 )
 

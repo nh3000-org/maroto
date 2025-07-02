@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/pagesize"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/pagesize"
 )
 
 func TestGetDimensions(t *testing.T) {

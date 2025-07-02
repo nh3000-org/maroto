@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/johnfercher/maroto/v2/pkg/core"
-	"github.com/johnfercher/maroto/v2/pkg/metrics"
+	"github.com/nh3000-org/maroto/v2/pkg/core"
+	"github.com/nh3000-org/maroto/v2/pkg/metrics"
 )
 
 func TestNewPDF(t *testing.T) {

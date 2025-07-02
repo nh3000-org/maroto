@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/johnfercher/maroto/v2/internal/fixture"
-	"github.com/johnfercher/maroto/v2/pkg/consts/linestyle"
-	"github.com/johnfercher/maroto/v2/pkg/consts/orientation"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/nh3000-org/maroto/v2/internal/fixture"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/linestyle"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/orientation"
+	"github.com/nh3000-org/maroto/v2/pkg/props"
 )
 
 func TestLine_MakeValid(t *testing.T) {

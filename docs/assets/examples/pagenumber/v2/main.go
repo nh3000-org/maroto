@@ -3,16 +3,16 @@ package main
 import (
 	"log"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/fontfamily"
-	"github.com/johnfercher/maroto/v2/pkg/consts/fontstyle"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/fontfamily"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/fontstyle"
 
-	"github.com/johnfercher/maroto/v2/pkg/core"
+	"github.com/nh3000-org/maroto/v2/pkg/core"
 
-	"github.com/johnfercher/maroto/v2"
+	"github.com/nh3000-org/maroto/v2"
 
-	"github.com/johnfercher/maroto/v2/pkg/components/text"
-	"github.com/johnfercher/maroto/v2/pkg/config"
-	"github.com/johnfercher/maroto/v2/pkg/props"
+	"github.com/nh3000-org/maroto/v2/pkg/components/text"
+	"github.com/nh3000-org/maroto/v2/pkg/config"
+	"github.com/nh3000-org/maroto/v2/pkg/props"
 )
 
 func main() {

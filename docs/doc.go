@@ -27,11 +27,11 @@ Maroto has only gofpdf dependency. All tests pass on Linux and Mac.
 
 To install the package on your system, run
 
-	go get github.com/johnfercher/pkg
+	go get github.com/nh3000-org/pkg
 
 Later, to receive updates, run
 
-	go get -u -v github.com/johnfercher/pkg/...
+	go get -u -v github.com/nh3000-org/pkg/...
 
 # Quick Start
 

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/johnfercher/maroto/v2/pkg/consts/align"
-	"github.com/johnfercher/maroto/v2/pkg/consts/breakline"
-	"github.com/johnfercher/maroto/v2/pkg/consts/fontstyle"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/align"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/breakline"
+	"github.com/nh3000-org/maroto/v2/pkg/consts/fontstyle"
 )
 
 // Place is the representation of a place in a page.

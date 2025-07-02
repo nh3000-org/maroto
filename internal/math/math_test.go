@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/johnfercher/maroto/v2/pkg/core/entity"
+	"github.com/nh3000-org/maroto/v2/pkg/core/entity"
 
-	"github.com/johnfercher/maroto/v2/internal/math"
+	"github.com/nh3000-org/maroto/v2/internal/math"
 	"github.com/stretchr/testify/assert"
 )
 
