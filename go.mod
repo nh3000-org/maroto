@@ -6,9 +6,8 @@ require (
 	github.com/boombuler/barcode v1.0.2
 	github.com/f-amaral/go-async v0.3.0
 	github.com/google/uuid v1.6.0
-	github.com/nh3000-org/go-tree v1.1.0
-	github.com/nh3000-org/maroto/v2 v2.3.1
 	github.com/jung-kurt/gofpdf v1.16.2
+	github.com/nh3000-org/go-tree v1.1.0
 	github.com/pdfcpu/pdfcpu v0.11.0
 	github.com/stretchr/testify v1.10.0
 	gopkg.in/yaml.v3 v3.0.1
@@ -19,6 +18,7 @@ require (
 	github.com/hhrutter/lzw v1.0.0 // indirect
 	github.com/hhrutter/pkcs7 v0.2.0 // indirect
 	github.com/hhrutter/tiff v1.0.2 // indirect
+	github.com/johnfercher/go-tree v1.1.0 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect

@@ -15,7 +15,7 @@ import (
 
 	"github.com/nh3000-org/maroto/v2/pkg/core/entity"
 
-	"github.com/johnfercher/go-tree/node"
+	"github.com/nh3000-org/go-tree/node"
 
 	"github.com/nh3000-org/maroto/v2/pkg/components/col"
 	"github.com/nh3000-org/maroto/v2/pkg/components/page"
